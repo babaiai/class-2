@@ -23,7 +23,7 @@ df['RSI'] = calculate_rsi(df)
 fig = go.Figure()
 
 # 添加股票价格线
-fig.add_trace(go.Scatter(x=df['date'], y=df['close'], mode='lines', name='close Price'))
+fig.add_trace(go.Scatter(x=df['date'], y=df['close'], mode='lines', name='Close Price'))
 
 # 添加移动平均线
 fig.add_trace(go.Scatter(x=df['date'], y=df['MA_20'], mode='lines', name='20-Day MA'))
@@ -39,3 +39,4 @@ fig.update_layout(title='股票数据与技术指标可视化',
 
 # 显示图表
 st.plotly_chart(fig)
+
