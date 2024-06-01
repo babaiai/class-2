@@ -5,12 +5,7 @@ import streamlit as st
 # 从本地文件读取股票数据
 df = pd.read_csv('C:\\Users\\vicky\\Desktop\\學校\\333\\6560.csv')
 
-html_temp = """
-  <div style="background-color:#3872fb;padding:10px;border-radius:10px">
-  <h1 style="color:white;text-align:center;">雙邦金融資料視覺化呈現 (金融看板) </h1>
-  <h2 style="color:white;text-align:center;">Financial Dashboard </h2>
-  </div>
-  """
+
 stc.html(html_temp)
 
 
